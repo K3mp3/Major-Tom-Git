@@ -1,14 +1,21 @@
 import gsap from "gsap";
 
+const hamburgerMenu = document.querySelector(".hamburger-menu") as HTMLButtonElement;
+const middleSpanElement = document.querySelector(".middle-span-element") as HTMLSpanElement;
+
 export function init() {
-    const hamburgerMenu = document.querySelector(".hamburger-menu") as HTMLButtonElement;
-    const middleSpanElement = document.querySelector(".middle-span-element") as HTMLSpanElement;
     console.log(hamburgerMenu);
     console.log(middleSpanElement);
 
-    window.addEventListener("mouseover", moveSpanElement);
+    hamburgerMenu.addEventListener("mouseover", moveSpanElementForward);
+    hamburgerMenu.addEventListener("mouseleave", moveSpanElementBackward);
 }
 
-function moveSpanElement() {
-    
+function moveSpanElementForward() {
+    gsap.to(middleSpanElement, {x: 6});
+    console.log("hej");
+}
+
+function moveSpanElementBackward() {
+    gsap.to(middleSpanElement, {x: 0});
 }

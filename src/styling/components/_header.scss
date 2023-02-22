@@ -6,17 +6,11 @@
     position: relative;
 
     nav {
-        background-color: antiquewhite;
         width: 100%;
         height: 80px;
         position: fixed;
-
-        .bg-color {
-            background-color: blueviolet;
-        }
         
         .menu {
-            background-color: aqua;
             height: 70px;
             display: flex;
             justify-content: end;
@@ -50,47 +44,42 @@
             }
         }
     }
+}
 
-    .slogan-holder {
-        background-color: aqua;
-        width: 50px;
-        height: 50px;
-    }
+aside {
+    max-width: 160px;
+    margin-top: -700px;
+    margin-left: 25px;
+    border: 4px solid #000;
+    background-color: rgb(255, 255, 255, 0.8);
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
 
-    aside {
-        max-width: 250px;
-        margin-top: 65px;
-        margin-left: 25px;
-        border: 4px solid #000;
-        background-color: rgb(255, 255, 255, 0.8);
-        position: absolute;
-        font-family: 'Rubik', sans-serif;
-        font-weight: 500;
-        font-size: 1.9rem;
-        text-transform: uppercase;
-        padding: 10px 0;
-    }
-    
-    .slogan {
-        text-align: center;
-        padding: 10px 30px;
-    }
-    
-    .slogan-link {
-        text-decoration: none;
-        color: #000;
-        font-size: 0.8rem;
-        font-weight: 400;
-        margin: 20px 10px;
-    }
-    
-    .fa-arrow-right {
-        transition: all 0.3s ease-in-out;
-        transform: translate(2px); 
-    }
-    
-    a:hover .fa-arrow-right {
-        transition: all 0.3s ease-in-out;
-        transform: translate(15px);
-    }
+.slogan {
+    text-align: center;
+    padding: 10px 30px;
+    display: flex;
+}
+
+.slogan-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 20px 10px;
+}
+
+.fa-arrow-right {
+    transition: all 0.3s ease-in-out;
+    transform: translate(2px); 
+}
+
+a:hover .fa-arrow-right {
+    transition: all 0.3s ease-in-out;
+    transform: translate(15px);
 }

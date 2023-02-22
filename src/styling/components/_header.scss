@@ -7,9 +7,10 @@
 
     nav {
         background-color: antiquewhite;
-        height: 100px;
+        height: 100px;        
+    }
 
-        button { //Hamburger icon
+    button { //Hamburger icon
             width: 45px;
             height: 45px;
             background: transparent;
@@ -19,35 +20,27 @@
             top: 20px;
             z-index: 3;
             pointer-events: none;
-        }
-        
-        button span {
-            display: block;
-            width: 35px;
-            height: 5px;
-            background-color: black;
-            border-radius: 6px;
-            margin-bottom: 4px;
-            position: relative;
-            left: 0;
-            margin-left: 6px;
-        }
-        
-        button span:nth-child(2) {
-            margin-left: 0;
-            transition: all 0.4s ease-in-out;
-        }
-        
-        input:hover + .menu button span:nth-child(2) {
-            left: 6px;
-        }
-        
-        input:checked + .menu nav {
-            visibility: visible;
-            opacity: 0.8;
-            transition: all 0.3s ease-in-out;
-        }
+
+            span {
+                display: block;
+                width: 35px;
+                height: 5px;
+                background-color: black;
+                border-radius: 6px;
+                margin-bottom: 4px;
+                position: relative;
+                left: 0;
+                margin-left: 6px;
+            }
+            
+            span:nth-child(2) {
+                margin-left: 0;
+                transition: all 0.4s ease-in-out;
+                background-color: aqua;
+    
+                &:hover {
+                    margin-left: 6px;
+                }
+            }
     }
-
-
 }

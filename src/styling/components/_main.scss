@@ -1,0 +1,187 @@
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../public/img/space.webp");
+    background-size: cover; 
+    background-position: center;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-weight: 400;
+    padding: 70px 45px;
+}
+
+.background-holder { //Parent div to div class left and right
+    max-width: 550px;
+    margin: auto;
+}
+
+.heading {
+    font-size: 2rem;
+    margin: 0;
+    margin-left: 15px;
+}
+
+.main-title {
+    margin-top: 0;
+    z-index: 1;
+    text-shadow: 0px 5px 5px #000;
+    position: relative;
+}
+
+.main-span {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #a5a5a5;
+    margin-top: 0;
+    position: relative;
+    top: 30px;
+    left: -106px;
+    font-size: 4.0rem;
+}
+
+.title {
+    margin-top: 60px;
+}
+
+main p {
+    color: rgb(216, 216, 216);
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 15px 0;
+    line-height: 1.3rem;
+}
+
+.major-tom {
+    display: none;
+}
+
+main a {
+    color: rgb(255, 0, 140);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/*Quote*/
+
+blockquote {
+    font-weight: 300;
+    margin: 35px 45px;
+    position: relative;
+    display: block;
+    font-style: italic;
+    line-height: 1.3rem;
+
+    &::before, span::after {
+        display: block;
+        position: absolute;
+        font-size: 6rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        opacity: 30%;
+    }
+
+    &::before {
+        top: 18px;
+        left: -29px;
+        content: open-quote;
+    }
+
+    span::after  {
+        bottom: -35px;
+        right: -14px;
+        content: close-quote;
+    }
+
+    span {
+        position: relative;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .background-holder {
+        min-width: 1200px;
+        margin: auto;
+        display: flex;
+    }
+
+
+    .left-column, .right-column {
+        width: 50%;
+        padding: 50px 0px;
+    }
+
+    .left-column {
+        padding-right: 165px;
+    }
+
+    .right-column {
+        padding-left: 165px;
+    }
+
+    .desktop-quote{
+        width: 65%;
+        margin: 60px 0;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1.3rem;
+    }
+
+    .desktop-quote p{
+        font-size: 2rem;
+        background: -webkit-linear-gradient(#3a222f, #43474b, #3a222f);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1.3rem;
+    }
+
+    .main-span {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: #a5a5a5;
+        margin-top: 0;
+        position: relative;
+        top: -47px;
+        left: 15px;
+        font-size: 5.5rem;
+    }
+    
+    .main-title {
+        margin-top: 0;
+        z-index: 1;
+        text-shadow: 0px 5px 5px #000;
+        position: relative;
+        display: block;
+    }
+
+    .major-tom {
+        display: block;
+        width: 110px;
+        height: auto;
+        float: right;
+        transform: rotate(3deg);
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        text-align: right;
+    }
+
+    .cookie-button {
+        background-color: #2321b1;
+        color: #fff;
+        border: none;
+        padding: 6px;
+        right: 0;
+        margin: 0;
+        
+    }
+    .cookie-text{
+        width: 50vw;
+    }
+
+    .cookie-accept{
+        width: 50vw;
+    }
+}

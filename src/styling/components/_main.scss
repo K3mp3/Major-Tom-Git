@@ -6,56 +6,92 @@ main {
     color: white;
     font-weight: 400;
     padding: 70px 45px;
+}
 
-    .background-holder { //Parent div to div class left and right
-        max-width: 550px;
-        margin: auto;
+.background-holder { //Parent div to div class left and right
+    max-width: 550px;
+    margin: auto;
+}
+
+.heading {
+    font-size: 2rem;
+    margin: 0;
+    margin-left: 15px;
+}
+
+.main-title {
+    margin-top: 0;
+    z-index: 1;
+    text-shadow: 0px 5px 5px #000;
+    position: relative;
+}
+
+.main-span {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #a5a5a5;
+    margin-top: 0;
+    position: relative;
+    top: 30px;
+    left: -106px;
+    font-size: 4.0rem;
+}
+
+.title {
+    margin-top: 60px;
+}
+
+main p {
+    color: rgb(216, 216, 216);
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 15px 0;
+    line-height: 1.3rem;
+}
+
+.major-tom {
+    display: none;
+}
+
+main a {
+    color: rgb(255, 0, 140);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/*Quote*/
+
+blockquote {
+    font-weight: 300;
+    margin: 35px 45px;
+    position: relative;
+    display: block;
+    font-style: italic;
+    line-height: 1.3rem;
+
+    &::before, span::after {
+        display: block;
+        position: absolute;
+        font-size: 6rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        opacity: 30%;
     }
 
-    .heading {
-        font-size: 2rem;
-        margin: 0;
-        margin-left: 15px;
+    &::before {
+        top: 18px;
+        left: -29px;
+        content: open-quote;
     }
-    
-    .main-title {
-        margin-top: 0;
-        z-index: 1;
-        text-shadow: 0px 5px 5px #000;
+
+    span::after  {
+        bottom: -35px;
+        right: -14px;
+        content: close-quote;
+    }
+
+    span {
         position: relative;
-    }
-    
-    .main-span {
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: #a5a5a5;
-        margin-top: 0;
-        position: relative;
-        top: 30px;
-        left: -106px;
-        font-size: 4.0rem;
-    }
-    
-    .title {
-        margin-top: 60px;
-    }
-    
-    main p {
-        color: rgb(216, 216, 216);
-        font-size: 0.9rem;
-        font-weight: 300;
-        margin: 15px 0;
-        line-height: 1.3rem;
-    }
-    
-    .major-tom {
-        display: none;
-    }
-    
-    main a {
-        color: rgb(255, 0, 140);
-        font-weight: 300;
-        font-size: 0.9rem;
     }
 }
 main {

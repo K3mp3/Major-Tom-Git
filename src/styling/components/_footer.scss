@@ -5,21 +5,47 @@ footer {
     padding: 30px;
     color: rgb(255, 0, 140);
     text-align: center;
+
+    footer p{
+        text-align: left;
+    }
+    
+    .cookie-button{
+        background-color: #2321b1;
+        color: #fff;
+        border: none;
+        padding: 6px;
+        margin-top: 20px;
+    }
+    
+    .cookie-button:hover{
+        background-color: #3533ad;
+        cursor: pointer;
+    }
 }
 
-footer p{
-    text-align: left;
-}
 
-.cookie-button{
-    background-color: #2321b1;
-    color: #fff;
-    border: none;
-    padding: 6px;
-    margin-top: 20px;
-}
+@media screen and (min-width: 1200px){
+    footer {
+        display: flex;
+        flex-direction: row;
+        text-align: right;
 
-.cookie-button:hover{
-    background-color: #3533ad;
-    cursor: pointer;
+        .cookie-button {
+            background-color: #2321b1;
+            color: #fff;
+            border: none;
+            padding: 6px;
+            right: 0;
+            margin: 0;
+            
+        }
+        .cookie-text{
+            width: 50vw;
+        }
+    
+        .cookie-accept{
+            width: 50vw;
+        }
+    }
 }

@@ -1,0 +1,25 @@
+footer {
+    background-color: #100431;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    padding: 30px;
+    color: rgb(255, 0, 140);
+    text-align: center;
+}
+
+footer p{
+    text-align: left;
+}
+
+.cookie-button{
+    background-color: #2321b1;
+    color: #fff;
+    border: none;
+    padding: 6px;
+    margin-top: 20px;
+}
+
+.cookie-button:hover{
+    background-color: #3533ad;
+    cursor: pointer;
+}
